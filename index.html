@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qunnderrie Snelling Portfolio </title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
- rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="index.css">
@@ -17,12 +21,12 @@
     <div class="topContainer">
         <nav>
             <div class="navContainer container">
-                <h2>QS</h2>
+                <a href="#"><h2>QS</h2></a>
                 <ul class="nav-items">
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About </a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,11 +37,64 @@
         <h3>A Full Stack-Web Developer.</h3>
         <button type="button">Download Resume</button>
         <div class="socialIcons">
-            <a href="https://github.com/Qunnderrie1"><img src="./Icon awesome-github.png" alt="gitHub" ></a>
-            <a href="https://twitter.com/QunnderrieDev"><img src="./Icon awesome-twitter.png" alt="Twitter" ></a>
-            <a href="https://www.linkedin.com/in/qunnderrie/"><img src="./Icon metro-linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Qunnderrie1"><img src="./images/Icon awesome-github.png" alt="gitHub" ></a>
+            <a href="https://twitter.com/QunnderrieDev"><img src="./images/Icon awesome-twitter.png" alt="Twitter" ></a>
+            <a href="https://www.linkedin.com/in/qunnderrie/"><img src="./images/Icon metro-linkedin.png" alt="LinkedIn"></a>
         </div>
     </header>
+    <hr>
+
+    <div class="aboutSection container" id="about">
+    
+        <h2>About</h2>
+        <article>I’m a self-driven and experienced Full Stack Web Developer with
+            creating high-scalable web applications and developing responsive<br>
+            websites using front-end and back-end tools. Can adapt to change
+            when learning new technologies. Effective in communication, working<br>
+            in teams, and solving complex problems to develop web applications.</article>
+    </div>
+
+    <hr>
+    <div class="projectSection container" id="projects">
+        <h2>Projects</h2>
+        <a href="http://www.shinetime561.com"><img class="img-fuild" src="./images/Porject-1.png" alt="" srcset=""></a>
+    </div>
+
+    <hr>
+    <div class="contactFormContainer container" id="contacts">
+        <h2>Contact Me</h2>
+                <form action="" method="get">
+                    <div class="row">
+                        <div class="col">
+                            <label for="fname">Name:</label>
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">Email:</label>
+                            <input class="form-control" type="text" name="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="form-control" name="userMessage" id="userMessage" cols="30" rows="10" minlength="1" maxlength="200" placeholder="Enter your message here....." ></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <Button class="btn btn-dark" type="submit">Submit</Button>
+                        </div>
+                    </div>
+               </form>
+
+    </div>
+
+    <footer>
+        <p>Design & Developed by Qunnderrie Snelling</p>
+    </footer>
+
+
 
 
     

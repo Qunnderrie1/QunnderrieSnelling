@@ -19,7 +19,7 @@
 .navContainer h2{
     color: white;
     border: #fff solid 2px;
-    padding: 8px;
+    padding: 6px;
     border-radius: 5px;
 }
 a{
@@ -71,11 +71,95 @@ header button:hover{
     color: #263238;
 }
 .socialIcons{
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     gap: 40px;
     transition: 0.3s;
 }
 .socialIcons a:hover{
+    transform: scale(1.2);
     opacity: 50%;
+}
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.aboutSection h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+  
+}
+article{
+    text-align: center;
+    margin-top: 40px;
+    line-height: 2;
+}
+hr{
+    width: 100px;
+    justify-content: center;
+    margin: 100px auto;
+}
+.projectSection{
+    margin-top: 100px;
+    text-align: center;
+}
+.projectSection h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+
+    padding:5px 20px;
+    border-radius: 10px;
+}
+.projectSection a img{
+    margin-top: 40px;
+    border: #263238 solid 2px;
+    height: 200px;
+    width: 350px;
+    transition: 0.4s;
+}
+.projectSection a img:hover {
+    transform: scale(1.1);
+
+}
+.contactFormContainer{
+    text-align: center;
+    padding:40px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactFormContainer h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+}
+
+label{
+    color: #263238;
+    text-align: left;
+}
+.row{
+    margin-top: 20px;
+}
+.contactFormContainer .col{
+
+}
+.contactFormContainer button{
+    background-color: #263238;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+form{
+    text-align: start;
+}
+footer{
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #263238;
+    padding:40px;
 }
