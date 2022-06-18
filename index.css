@@ -96,8 +96,9 @@ header h3{
     border-radius: 5px;
     transition: 0.4s ease-in-out;
 
+
 }
-header button:hover{
+.downloadResume:hover{
     background-color: white;
     color: #263238;
 }
