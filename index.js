@@ -8,6 +8,8 @@ hamburger.addEventListener('click', () =>{
 })
 
 submitBtn.addEventListener('click', ()=>{
+
+    
     alert("Your message has been sent!")
 })
 
