@@ -55,6 +55,9 @@ header h3{
 }
 .name{
     font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+
+  
 }
 header button{
     margin-top: 40px;
@@ -162,4 +165,21 @@ footer{
     text-align: center;
     background-color: #263238;
     padding:40px;
+}
+
+
+@media  screen and (max-width: 768px) {
+
+    .topContainer h2{
+        display: none;
+    }
+    .nav-items{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    
 }
