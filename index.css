@@ -1,14 +1,42 @@
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 
+.nav-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:60px;
+}
+.nav-link{
+    transition: 0.7s ease ;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+    border: #fff solid 2px ;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
 .topContainer{
     background-color: #263238;
-}
-.active{
-    border: 2px solid #fff;
-    padding: 4px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-   
 }
 .navContainer{
     display: flex;
@@ -27,11 +55,12 @@ a{
     color: white;
     transition: 0.4s ease-in-out;
 }
+
 a:hover{
     color: #FFF;
 
 }
-.nav-items{
+.nav-menu{
     list-style: none;
     display: flex;
     gap:20px;
@@ -147,9 +176,7 @@ label{
 .row{
     margin-top: 20px;
 }
-.contactFormContainer .col{
 
-}
 .contactFormContainer button{
     background-color: #263238;
     color: white;
@@ -168,18 +195,53 @@ footer{
 }
 
 
+
+
+
+
 @media  screen and (max-width: 768px) {
 
-    .topContainer h2{
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg)
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-menu{
+        position:absolute;
+        left: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background-color:#263238;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navContainer{
+        display: flex;
+    }
+    .navContainer h2{
         display: none;
     }
-    .nav-items{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
+
+
+    .nav-item{
+        margin: 16px 0 ;
+    }
+
+    .nav-menu.active{
+        margin-bottom: 100px;
+        padding: 0;
+        left: 0;
     }
     
 }
