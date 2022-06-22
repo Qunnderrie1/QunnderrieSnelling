@@ -35,13 +35,14 @@
     border-radius: 5px;
 }
 .topContainer{
-    background-color: #263238;
+    background-color: #3c096c;
 }
 .navContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:20px;
+    
 }
 .navContainer h2{
     color: white;
@@ -71,7 +72,7 @@ header{
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #263238;
+    background-color: #3c096c;
 }
 header h2{
     font-weight: 400;
@@ -89,12 +90,12 @@ header h3{
 }
 .downloadResume{
     margin-top: 40px;
-    border:2px solid #fff;
     padding: 10px 20px;
-    background-color: #263238;
+    background-color: #240046;
     color: white;
     border-radius: 5px;
     transition: 0.4s ease-in-out;
+    box-shadow: 2px 2px 20px #240046;
 
 
 }
@@ -178,7 +179,7 @@ label{
 }
 
 .contactFormContainer button{
-    background-color: #263238;
+    background-color: #3c096c;
     color: white;
     padding: 5px 20px;
     border-radius: 5px;
@@ -190,7 +191,7 @@ footer{
     margin-top: 40px;
     color: #fff;
     text-align: center;
-    background-color: #263238;
+    background-color: #3c096c;
     padding:40px;
 }
 i{
